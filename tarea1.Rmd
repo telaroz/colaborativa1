@@ -1,12 +1,14 @@
 ---
-title: "Tarea Colaborativa 1"
+title: "Diploma Universitario en Analítica avanzada en balonmano: Tarea Colaborativa 1"
 author: "Valery Zúñiga Kondrashov"
-date: "2021-01-25"
+date: "2021-01-26"
 output: 
   prettydoc::html_pretty:
     theme: tactile
 always_allow_html: true
 ---
+##### Nota: el código completo que genera este archivo html se puede encontrar [aquí](https://github.com/telaroz/colaborativa1/blob/master/tarea1.Rmd).
+
 
 ## Pregunta A: 
 
@@ -186,7 +188,7 @@ $~$
 
 Calculemos ahora los goles esperados, lo que nos dará una idea de la calidad de lanzamientos que tuvo cada equipo. Para esto, podríamos tomar un marco de referencia externo con muchos más tiros, por ejemplo un análisis de 75,000 tiros de la Bundesliga. Estos goles esperados están mucho más detallados de aquellos que podemos tomar de los play by play de este mundial. En [este](https://handballytics.de/expected-goals-wurfeffizenz/) enlace se puede ver la tabla con goles esperados por tipo de tiro. 
 
-Tomemos todos los partidos de la fase de grupos como nuestra referencia. Si bien no es una gran cantidad de datos, es suficiente para el análsis y la creación de este modelo discreto (que con más datos, por ejemplo espaciales del punto exacto del lanzamiento o velocidad del jugador, se podría trabajar con un modelo más continuo a los que encontramos actualmente en balonmano).
+Tomemos todos los partidos de la fase de grupos como nuestra referencia. Si bien no es una gran cantidad de datos, es suficiente para el análisis y la creación de este modelo discreto (que con más datos, por ejemplo espaciales del punto exacto del lanzamiento o velocidad del jugador, se podría trabajar con un modelo más continuo, comparando con los que encontramos actualmente para balonmano).
 
 
 Cargamos todos los partidos de la fase de grupos para analizar los tiros. Este archivo fue generado con todos los play by play de la fase de grupos gracias a la función `generar_pbp_tidy` mencionada anteriormente. Acá simplemente descargamos ese archivo y tomamos a los equipos que nos interesan.  
@@ -277,7 +279,8 @@ equipos_analisis[is.na(gol), gol := 0]
 goles_eq <- equipos_analisis[, .(Goles = sum(gol)), .(equipo, id_partido)]
 
 pos_eq <- equipos_analisis[!is.na(xg), 
-                           .(id_partido, xg, posesion, numero_posesion, posicion_tiro, gol, equipo)]
+                           .(id_partido, xg, posesion, numero_posesion,
+                             posicion_tiro, gol, equipo)]
 
 pos_eq[, cantidad_tiros := .N, .(numero_posesion, id_partido)]
 
@@ -291,7 +294,7 @@ xg_final_eq <- xg_final_eq[, .(`Goles Esperados` = sum(xg_ajustado)), .(equipo, 
 xg_final_eq[goles_eq, Goles := i.Goles, on = c('equipo', 'id_partido')
           ][, Diferencia := Goles - `Goles Esperados`]
 
-xg_final_eq[equipos_analisis, Contrincante := i.contrincante, on = 'id_partido']
+xg_final_eq[equipos_analisis, Contrincante := i.contrincante, on = c('id_partido', 'equipo')]
 xg_final_eq <- xg_final_eq[equipo %in% c('EGY', 'CHI')]
 ```
 
@@ -334,7 +337,7 @@ esperados_chile <- tiros[, .(xg = sum(gol)/.N, cantidad_tiros = .N), posicion_ti
 
 ```
 
-Sin duda un partido no es una muestra suficiente, pero en este partido los lanzamientos por el centro de 9m fueron altamente utilizados y poco efectivos. Sin embargo, algunos tiros de estos condicionados por la amenaza del pasivo.
+Sin duda un partido no es una muestra suficiente, pero en este partido los lanzamientos por el centro de 9m fueron altamente utilizados y poco efectivos. Sin embargo, algunos tiros de estos fueron condicionados por la amenaza del pasivo.
 
 Analicemos también la dependecia de ciertos jugadores en cada equipo. Para esto podemos obtener del archivo ya descargado '01FRT.PDF' la distribución de minutos por jugador durante este partido. Cargamos los datos, extraemos las tablas y limpiamos el tiempo para que nos lo de en minutos enteros. 
 
