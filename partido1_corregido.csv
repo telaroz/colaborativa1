@@ -1,0 +1,214 @@
+id_partido,tiempo,tiempo_numerico,mitad,accion,numero,equipo,portero,asistencia_numero,gol_numero,asistencia_numero,tiro_numero,gol,posicion_marco,posicion_tiro,post,saved,posicion_marco_vertical,posicion_marco_horizontal,numero_causa_7m,numero_recibe_7m,turnover,robo,suspension,es_casa,equipo,cantidad_suspendidos,sin_portero,cantidad_jugadores_campo,posesion,numero_posesion,inicio_posesion,fin_posesion
+1,0:00,0,1,HENDAWY K Goalkeeper,88,EGY,88,,,,,,"","",,,"","",,,,,,TRUE,EGY,0,,,EGY,1,"",""
+1,0:00,0,1,BARRIENTOS F Goalkeeper,1,CHI,1,,,,,,"","",,,"","",,,,,,FALSE,CHI,0,,,EGY,1,"",""
+1,1:43,103,1,FRELIJJ J Warning (yellow card),9,CHI,1,,,,,,"","",,,"","",,,,,,FALSE,CHI,0,0,6,EGY,1,0:00,1:59
+1,1:59,119,1,ELDERAA Y Goal centre 9m bottom left,39,EGY,88,,39,,,1,bottom left,centre 9m,,,bottom,left,,,,,,TRUE,EGY,0,0,6,EGY,1,0:00,1:59
+1,2:45,165,1,SALINAS E Goal centre 6m bottom left (17 SALINAS R),11,CHI,1,17,11,17,,1,bottom left,centre 6m,,,bottom,left,,,,,,FALSE,CHI,0,0,6,CHI,2,1:59,2:45
+1,3:25,205,1,OMAR Y Shot centre 9m saved bottom left,5,EGY,88,,,,5,,bottom left,centre 9m,,1,bottom,left,,,,,,TRUE,EGY,0,0,6,EGY,3,2:45,3:25
+1,3:36,216,1,FEUCHTMANN E Shot right 9m saved middle right,4,CHI,1,,,,4,,middle right,right 9m,,1,middle,right,,,,,,FALSE,CHI,0,0,6,CHI,4,3:25,3:36
+1,3:47,227,1,OMAR Y Goal left 6m bottom left (39 ELDERAA Y),5,EGY,88,39,5,39,,1,bottom left,left 6m,,,bottom,left,,,,,,TRUE,EGY,0,0,6,EGY,5,3:36,3:47
+1,4:22,262,1,FEUCHTMANN E Technical Fault,4,CHI,1,,,,,,"","",,,"","",,,,,,FALSE,CHI,0,0,6,CHI,6,3:47,4:22
+1,4:33,273,1,ZEIN A Shot centre 9m blocked,90,EGY,88,,,,90,,blocked,centre 9m,,,"","",,,,,,TRUE,EGY,0,0,6,EGY,7,4:22,4:33
+1,4:33,273,1,FEUCHTMANN E Block,4,CHI,1,,,,,,"","",,,"","",,,,,,FALSE,CHI,0,0,6,EGY,7,4:22,4:33
+1,4:42,282,1,SALINAS E Goal right 6m bottom left (30 AYALA D),11,CHI,1,30,11,30,,1,bottom left,right 6m,,,bottom,left,,,,,,FALSE,CHI,0,0,6,CHI,8,4:33,4:42
+1,5:45,345,1,ELDERAA Y Goal centre 6m bottom centre (5 OMAR Y),39,EGY,88,5,39,5,,1,bottom centre,centre 6m,,,bottom,centre,,,,,,TRUE,EGY,0,0,6,EGY,9,4:42,5:45
+1,6:23,383,1,FEUCHTMANN E Turnover,10,CHI,1,,,,,,"","",,,"","",,,10,,,FALSE,CHI,0,0,6,CHI,10,5:45,6:23
+1,6:33,393,1,SANAD M Goal right wing top left (90 ZEIN A),91,EGY,88,90,91,90,,1,top left,right wing,,,top,left,,,,,,TRUE,EGY,0,0,6,EGY,11,6:23,6:33
+1,7:08,428,1,SALINAS R Turnover,17,CHI,1,,,,,,"","",,,"","",,,17,,,FALSE,CHI,0,0,6,CHI,12,6:33,7:08
+1,7:28,448,1,OMAR Y Turnover,5,EGY,88,,,,,,"","",,,"","",,,5,,,TRUE,EGY,0,0,6,EGY,13,7:08,7:28
+1,7:28,448,1,SALINAS R Steal,17,CHI,1,,,,,,"","",,,"","",,,,17,,FALSE,CHI,0,0,6,EGY,13,7:08,7:28
+1,7:56,476,1,MAMDOUH M Steal,89,EGY,88,,,,,,"","",,,"","",,,,89,,TRUE,EGY,0,0,6,CHI,14,7:28,7:56
+1,7:56,476,1,FEUCHTMANN E Turnover,10,CHI,1,,,,,,"","",,,"","",,,10,,,FALSE,CHI,0,0,6,CHI,14,7:28,7:56
+1,8:00,480,1,MAMDOUH M Goal fast break bottom left,89,EGY,88,,89,,,1,bottom left,fast break,,,bottom,left,,,,,,TRUE,EGY,0,0,6,EGY,15,7:56,8:00
+1,8:00,480,1,Team timeout,"",CHI,1,,,,,,"","",,,"","",,,,,,FALSE,CHI,0,0,6,CHI,16,8:00,8:25
+1,8:25,505,1,ELMASRY I Steal,24,EGY,88,,,,,,"","",,,"","",,,,24,,TRUE,EGY,0,0,6,CHI,16,8:00,8:25
+1,8:25,505,1,FEUCHTMANN E Turnover,10,CHI,1,,,,,,"","",,,"","",,,10,,,FALSE,CHI,0,0,6,CHI,16,8:00,8:25
+1,8:35,515,1,SANAD M Turnover,91,EGY,88,,,,,,"","",,,"","",,,91,,,TRUE,EGY,0,0,6,EGY,17,8:25,8:35
+1,8:35,515,1,FEUCHTMANN E Steal,4,CHI,1,,,,,,"","",,,"","",,,,4,,FALSE,CHI,0,0,6,EGY,17,8:25,8:35
+1,8:53,533,1,ELDERAA Y Warning (yellow card),39,EGY,88,,,,,,"","",,,"","",,,,,,TRUE,EGY,0,0,6,EGY,17,8:25,8:35
+1,9:21,561,1,SALINAS E Shot centre 6m post,11,CHI,1,,,,11,,post,centre 6m,1,,"","",,,,,,FALSE,CHI,0,0,6,CHI,18,8:35,9:26
+1,9:26,566,1,SALINAS E Goal centre 6m bottom left,11,CHI,1,,11,,,1,bottom left,centre 6m,,,bottom,left,,,,,,FALSE,CHI,0,0,6,CHI,18,8:35,9:26
+1,9:35,575,1,ELWAKIL O 7m received,31,EGY,88,,,,,,"","",,,"","",,31,,,,TRUE,EGY,0,0,6,EGY,19,9:26,10:17
+1,9:35,575,1,SANAD M Penalty shot saved middle left,91,EGY,88,,,,91,,middle left,Penalty,,1,middle,left,,,,,,TRUE,EGY,0,0,6,EGY,19,9:26,10:17
+1,9:35,575,1,AYALA D 7m caused,30,CHI,1,,,,,,"","",,,"","",30,,,,,FALSE,CHI,0,0,6,EGY,19,9:26,10:17
+1,9:35,575,1,AYALA D 2-minutes suspension,30,CHI,1,,,,,,"","",,,"","",,,,,30,FALSE,CHI,0,0,6,EGY,19,9:26,10:17
+1,10:17,617,1,ELWAKIL O Goal left wing top right (39 ELDERAA Y),31,EGY,88,39,31,39,,1,top right,left wing,,,top,right,,,,,,TRUE,EGY,0,0,6,EGY,19,9:26,10:17
+1,10:36,636,1,SALINAS Efor 1 BARRIENTOS F Empty goal,11,CHI,Empty goal,,,,,,"","",,,"","",,,,,,FALSE,CHI,-1,1,6,EGY,19,9:26,10:17
+1,10:48,648,1,ZEIN A Steal,90,EGY,88,,,,,,"","",,,"","",,,,90,,TRUE,EGY,0,0,6,CHI,20,10:17,10:48
+1,10:48,648,1,SALINAS R Turnover,17,CHI,Empty goal,,,,,,"","",,,"","",,,17,,,FALSE,CHI,-1,1,6,CHI,20,10:17,10:48
+1,10:51,651,1,BARRIENTOS Ffor 10 FEUCHTMANN E Goalkeeper back,1,CHI,1,,,,,,"","",,,"","",,,,,,FALSE,CHI,-1,0,5,CHI,20,10:17,10:48
+1,10:56,656,1,ELDERAA Y Goal fast break bottom left (5 OMAR Y),39,EGY,88,5,39,5,,1,bottom left,fast break,,,bottom,left,,,,,,TRUE,EGY,0,0,6,EGY,21,10:48,10:56
+1,11:05,665,1,FEUCHTMANN Efor 1 BARRIENTOS F Empty goal,10,CHI,Empty goal,,,,,,"","",,,"","",,,,,,FALSE,CHI,-1,1,6,EGY,21,10:48,10:56
+1,11:45,705,1,OMAR Y 7m caused,5,EGY,88,,,,,,"","",,,"","",5,,,,,TRUE,EGY,0,0,6,CHI,22,10:56,11:56
+1,11:45,705,1,FEUCHTMANN E 7m received,10,CHI,Empty goal,,,,,,"","",,,"","",,10,,,,FALSE,CHI,0,1,7,CHI,22,10:56,11:56
+1,11:56,716,1,SALINAS R Penalty shot missed,17,CHI,Empty goal,,,,17,,missed,Penalty,,,"","",,,,,,FALSE,CHI,0,1,7,CHI,22,10:56,11:56
+1,12:01,721,1,BARRIENTOS Ffor 11 SALINAS E Goalkeeper back,1,CHI,1,,,,,,"","",,,"","",,,,,,FALSE,CHI,0,0,6,CHI,22,10:56,11:56
+1,12:28,748,1,FEUCHTMANN E Warning (yellow card),4,CHI,1,,,,,,"","",,,"","",,,,,,FALSE,CHI,0,0,6,CHI,22,10:56,11:56
+1,12:51,771,1,ZEIN A Goal centre 9m middle left,90,EGY,88,,90,,,1,middle left,centre 9m,,,middle,left,,,,,,TRUE,EGY,0,0,6,EGY,23,11:56,12:51
+1,13:14,794,1,OMAR Y 2-minutes suspension,5,EGY,88,,,,,,"","",,,"","",,,,,5,TRUE,EGY,0,0,6,EGY,23,11:56,12:51
+1,13:14,794,1,FRELIJJ Jfor 1 BARRIENTOS F Empty goal,9,CHI,Empty goal,,,,,,"","",,,"","",,,,,,FALSE,CHI,0,1,7,EGY,23,11:56,12:51
+1,13:34,814,1,SANAD M 7m caused,91,EGY,88,,,,,,"","",,,"","",91,,,,,TRUE,EGY,-1,0,5,CHI,24,12:51,13:39
+1,13:34,814,1,FEUCHTMANN E 7m received,4,CHI,Empty goal,,,,,,"","",,,"","",,4,,,,FALSE,CHI,0,1,7,CHI,24,12:51,13:39
+1,13:35,815,1,BARRIENTOS Ffor 10 FEUCHTMANN E Goalkeeper back,1,CHI,1,,,,,,"","",,,"","",,,,,,FALSE,CHI,0,0,6,CHI,24,12:51,13:39
+1,13:39,819,1,REYES D Goal Penalty shot bottom left (4 FEUCHTMANN E),7,CHI,1,4,7,4,,1,bottom left,Penalty,,,bottom,left,,,,,,FALSE,CHI,0,0,6,CHI,24,12:51,13:39
+1,14:07,847,1,RAMADAN Mfor 88 HENDAWY K Empty goal,55,EGY,Empty goal,,,,,,"","",,,"","",,,,,,TRUE,EGY,-1,1,6,CHI,24,12:51,13:39
+1,14:32,872,1,ELDERAA Y Technical Fault,39,EGY,Empty goal,,,,,,"","",,,"","",,,,,,TRUE,EGY,-1,1,6,EGY,25,13:39,14:32
+1,14:40,880,1,BARRIENTOS F Goal empty goal bottom centre,1,CHI,1,,1,,,1,bottom centre,empty goal,,,bottom,centre,,,,,,FALSE,CHI,0,0,6,CHI,26,14:32,14:40
+1,15:08,908,1,DONOSO V 2-minutes suspension,77,CHI,1,,,,,,"","",,,"","",,,,,77,FALSE,CHI,0,0,6,CHI,26,14:32,14:40
+1,15:30,930,1,SANAD M Goal right wing bottom right (39 ELDERAA Y),91,EGY,Empty goal,39,91,39,,1,bottom right,right wing,,,bottom,right,,,,,,TRUE,EGY,0,1,7,EGY,27,14:40,15:30
+1,15:52,952,1,HENDAWY Kfor 89 MAMDOUH M Goalkeeper back,88,EGY,88,,,,,,"","",,,"","",,,,,,TRUE,EGY,0,0,6,EGY,27,14:40,15:30
+1,15:52,952,1,FEUCHTMANN Efor 1 BARRIENTOS F Empty goal,4,CHI,Empty goal,,,,,,"","",,,"","",,,,,,FALSE,CHI,-1,1,6,EGY,27,14:40,15:30
+1,16:04,964,1,FEUCHTMANN E Goal left 6m bottom centre,4,CHI,Empty goal,,4,,,1,bottom centre,left 6m,,,bottom,centre,,,,,,FALSE,CHI,-1,1,6,CHI,28,15:30,16:04
+1,16:05,965,1,BARRIENTOS Ffor 10 FEUCHTMANN E Goalkeeper back,1,CHI,1,,,,,,"","",,,"","",,,,,,FALSE,CHI,-1,0,5,CHI,28,15:30,16:04
+1,16:09,969,1,CEBALLOS S 2-minutes suspension,2,CHI,1,,,,,,"","",,,"","",,,,,2,FALSE,CHI,-1,0,5,CHI,28,15:30,16:04
+1,16:27,987,1,OMAR Y Goal centre 6m bottom left,5,EGY,88,,5,,,1,bottom left,centre 6m,,,bottom,left,,,,,,TRUE,EGY,0,0,6,EGY,29,16:04,16:27
+1,16:38,998,1,FEUCHTMANN Efor 1 BARRIENTOS F Empty goal,10,CHI,Empty goal,,,,,,"","",,,"","",,,,,,FALSE,CHI,-2,1,5,EGY,29,16:04,16:27
+1,17:21,1041,1,ELMASRY I Warning (yellow card),24,EGY,88,,,,,,"","",,,"","",,,,,,TRUE,EGY,0,0,6,EGY,29,16:04,16:27
+1,18:08,1088,1,ZEIN A 2-minutes suspension,90,EGY,88,,,,,,"","",,,"","",,,,,90,TRUE,EGY,0,0,6,EGY,29,16:04,16:27
+1,18:27,1107,1,OMAR Y Steal,5,EGY,88,,,,,,"","",,,"","",,,,5,,TRUE,EGY,-1,0,5,CHI,30,16:27,18:27
+1,18:27,1107,1,FEUCHTMANN E Turnover,4,CHI,Empty goal,,,,,,"","",,,"","",,,4,,,FALSE,CHI,0,1,7,CHI,30,16:27,18:27
+1,18:34,1114,1,ELDERAA Y Goal fast break bottom centre,39,EGY,88,,39,,,1,bottom centre,fast break,,,bottom,centre,,,,,,TRUE,EGY,-1,0,5,EGY,31,18:27,18:34
+1,19:05,1145,1,FEUCHTMANN E Goal centre 6m bottom right (17 SALINAS R),10,CHI,Empty goal,17,10,17,,1,bottom right,centre 6m,,,bottom,right,,,,,,FALSE,CHI,0,1,7,CHI,32,18:34,19:05
+1,19:39,1179,1,ELDERAA Y Goal centre 6m bottom left,39,EGY,88,,39,,,1,bottom left,centre 6m,,,bottom,left,,,,,,TRUE,EGY,-1,0,5,EGY,33,19:05,19:39
+1,20:10,1210,1,SALINAS E Goal right 6m bottom left (17 SALINAS R),11,CHI,Empty goal,17,11,17,,1,bottom left,right 6m,,,bottom,left,,,,,,FALSE,CHI,0,1,7,CHI,34,19:39,20:10
+1,20:27,1227,1,GARCIA Ffor 4 FEUCHTMANN E Goalkeeper back,12,CHI,12,,,,,,"","",,,"","",,,,,,FALSE,CHI,0,0,6,CHI,34,19:39,20:10
+1,20:51,1251,1,OMAR Y Shot centre 9m saved bottom centre,5,EGY,88,,,,5,,bottom centre,centre 9m,,1,bottom,centre,,,,,,TRUE,EGY,0,0,6,EGY,35,20:10,20:51
+1,20:51,1251,1,FRELIJJ J 2-minutes suspension,9,CHI,12,,,,,,"","",,,"","",,,,,9,FALSE,CHI,0,0,6,EGY,35,20:10,20:51
+1,21:08,1268,1,REYES Dfor 12 GARCIA F Empty goal,7,CHI,Empty goal,,,,,,"","",,,"","",,,,,,FALSE,CHI,-1,1,6,EGY,35,20:10,20:51
+1,21:29,1289,1,REYES D Technical Fault,7,CHI,Empty goal,,,,,,"","",,,"","",,,,,,FALSE,CHI,-1,1,6,CHI,36,20:51,21:29
+1,21:36,1296,1,ELMASRY I Goal empty goal middle centre,24,EGY,88,,24,,,1,middle centre,empty goal,,,middle,centre,,,,,,TRUE,EGY,0,0,6,EGY,37,21:29,21:36
+1,22:27,1347,1,SALINAS E Technical Fault,11,CHI,Empty goal,,,,,,"","",,,"","",,,,,,FALSE,CHI,-1,1,6,CHI,38,21:36,22:27
+1,22:34,1354,1,ELWAKIL O Goal left wing top centre (15 HESHAM A),31,EGY,88,15,31,15,,1,top centre,left wing,,,top,centre,,,,,,TRUE,EGY,0,0,6,EGY,39,22:27,22:34
+1,23:02,1382,1,GARCIA Ffor 29 ONETO M Goalkeeper back,12,CHI,12,,,,,,"","",,,"","",,,,,,FALSE,CHI,0,0,6,EGY,39,22:27,22:34
+1,23:24,1404,1,SALINAS E Turnover,11,CHI,12,,,,,,"","",,,"","",,,11,,,FALSE,CHI,0,0,6,CHI,40,22:34,23:24
+1,23:34,1414,1,SANAD M Goal right wing bottom left (5 OMAR Y),91,EGY,88,5,91,5,,1,bottom left,right wing,,,bottom,left,,,,,,TRUE,EGY,0,0,6,EGY,41,23:24,23:34
+1,24:08:00,1448,1,AYALA D Goal right wing bottom left (17 SALINAS R),30,CHI,12,17,30,17,,1,bottom left,right wing,,,bottom,left,,,,,,FALSE,CHI,0,0,6,CHI,42,23:34,24:08:00
+1,25:14:00,1514,1,RAMADAN M Goal breakthrough top right,55,EGY,88,,55,,,1,top right,breakthrough,,,top,right,,,,,,TRUE,EGY,0,0,6,EGY,43,24:08:00,25:14:00
+1,26:03:00,1563,1,FEUCHTMANN E Shot left 6m saved bottom left,4,CHI,12,,,,4,,bottom left,left 6m,,1,bottom,left,,,,,,FALSE,CHI,0,0,6,CHI,44,25:14:00,26:03:00
+1,26:16:00,1576,1,HESHAM A Shot fast break saved middle right,15,EGY,88,,,,15,,middle right,fast break,,1,middle,right,,,,,,TRUE,EGY,0,0,6,EGY,45,26:03:00,26:16:00
+1,26:25:00,1585,1,KADDAH H 2-minutes suspension,42,EGY,88,,,,,,"","",,,"","",,,,,42,TRUE,EGY,0,0,6,EGY,45,26:03:00,26:16:00
+1,27:10:00,1630,1,ELDERAA Sfor 88 HENDAWY K Empty goal,45,EGY,Empty goal,,,,,,"","",,,"","",,,,,,TRUE,EGY,-1,1,6,EGY,45,26:03:00,26:16:00
+1,27:26:00,1646,1,SALINAS R Turnover,17,CHI,12,,,,,,"","",,,"","",,,17,,,FALSE,CHI,0,0,6,CHI,46,26:16:00,27:26:00
+1,27:32:00,1652,1,FRELIJJ J 2-minutes suspension,9,CHI,12,,,,,,"","",,,"","",,,,,9,FALSE,CHI,0,0,6,CHI,46,26:16:00,27:26:00
+1,27:48:00,1668,1,RAMADAN M Shot centre 9m saved middle centre,55,EGY,Empty goal,,,,55,,middle centre,centre 9m,,1,middle,centre,,,,,,TRUE,EGY,-1,1,6,EGY,47,27:26:00,27:48:00
+1,27:56:00,1676,1,SALINAS R Goal empty goal top left,17,CHI,12,,17,,,1,top left,empty goal,,,top,left,,,,,,FALSE,CHI,-1,0,5,CHI,48,27:48:00,27:56:00
+1,27:57:00,1677,1,HENDAWY Kfor 45 ELDERAA S Goalkeeper back,88,EGY,88,,,,,,"","",,,"","",,,,,,TRUE,EGY,-1,0,5,CHI,48,27:48:00,27:56:00
+1,28:04:00,1684,1,ELDERAA Sfor 88 HENDAWY K Empty goal,45,EGY,Empty goal,,,,,,"","",,,"","",,,,,,TRUE,EGY,-1,1,6,CHI,48,27:48:00,27:56:00
+1,28:30:00,1710,1,SALINAS E 2-minutes suspension,11,CHI,12,,,,,,"","",,,"","",,,,,11,FALSE,CHI,-1,0,5,CHI,48,27:48:00,27:56:00
+1,28:42:00,1722,1,HENDAWY Kfor 42 KADDAH H Goalkeeper back,88,EGY,88,,,,,,"","",,,"","",,,,,,TRUE,EGY,0,0,6,CHI,48,27:48:00,27:56:00
+1,28:46:00,1726,1,ELDERAA S Goal breakthrough top centre,45,EGY,88,,45,,,1,top centre,breakthrough,,,top,centre,,,,,,TRUE,EGY,0,0,6,EGY,49,27:56:00,28:46:00
+1,28:54:00,1734,1,FEUCHTMANN Efor 12 GARCIA F Empty goal,10,CHI,Empty goal,,,,,,"","",,,"","",,,,,,FALSE,CHI,-2,1,5,EGY,49,27:56:00,28:46:00
+1,29:13:00,1753,1,FEUCHTMANN E Turnover,10,CHI,Empty goal,,,,,,"","",,,"","",,,10,,,FALSE,CHI,-2,1,5,CHI,50,28:46:00,29:13:00
+1,29:15:00,1755,1,GARCIA Ffor 10 FEUCHTMANN E Goalkeeper back,12,CHI,12,,,,,,"","",,,"","",,,,,,FALSE,CHI,-2,0,4,CHI,50,28:46:00,29:13:00
+1,29:19:00,1759,1,ELMASRY I Goal empty goal bottom centre,24,EGY,88,,24,,,1,bottom centre,empty goal,,,bottom,centre,,,,,,TRUE,EGY,0,0,6,EGY,51,29:13:00,29:19:00
+1,29:27:00,1767,1,FEUCHTMANN Efor 12 GARCIA F Empty goal,10,CHI,Empty goal,,,,,,"","",,,"","",,,,,,FALSE,CHI,-2,1,5,EGY,51,29:13:00,29:19:00
+1,29:27:00,1767,1,GARCIA Ffor 10 FEUCHTMANN E Goalkeeper back,12,CHI,12,,,,,,"","",,,"","",,,,,,FALSE,CHI,-2,0,4,EGY,51,29:13:00,29:19:00
+1,30:00:00,1800,1,SALINAS R Goal right 9m top right,17,CHI,12,,17,,,1,top right,right 9m,,,top,right,,,,,,FALSE,CHI,-1,0,5,CHI,52,29:19:00,30:00:00
+1,30:00:00,1800,2,ELTAYAR M Goalkeeper,96,EGY,96,,,,,,"","",,,"","",,,,,,TRUE,EGY,0,,,CHI,53,"",""
+1,30:00:00,1800,2,GARCIA F Goalkeeper,12,CHI,12,,,,,,"","",,,"","",,,,,,FALSE,CHI,-1,,,CHI,53,"",""
+1,30:34:00,1834,2,ELMASRY I 2-minutes suspension,24,EGY,96,,,,,,"","",,,"","",,,,,24,TRUE,EGY,0,0,6,CHI,53,30:00:00,30:34:00
+1,30:34:00,1834,2,FRELIJJ J Goal left 6m bottom left (17 SALINAS R),9,CHI,12,17,9,17,,1,bottom left,left 6m,,,bottom,left,,,,,,FALSE,CHI,0,0,6,CHI,53,30:00:00,30:34:00
+1,30:44:00,1844,2,MAMDOUH Mfor 96 ELTAYAR M Empty goal,89,EGY,Empty goal,,,,,,"","",,,"","",,,,,,TRUE,EGY,-1,1,6,CHI,53,30:00:00,30:34:00
+1,31:08:00,1868,2,ZEIN A Goal breakthrough bottom right,90,EGY,Empty goal,,90,,,1,bottom right,breakthrough,,,bottom,right,,,,,,TRUE,EGY,-1,1,6,EGY,54,30:34:00,31:08:00
+1,31:09:00,1869,2,ELTAYAR Mfor 11 MOAMEN A Goalkeeper back,96,EGY,96,,,,,,"","",,,"","",,,,,,TRUE,EGY,-1,0,5,EGY,54,30:34:00,31:08:00
+1,31:28:00,1888,2,AYALA D Shot right wing saved top centre,30,CHI,12,,,,30,,top centre,right wing,,1,top,centre,,,,,,FALSE,CHI,0,0,6,CHI,55,31:08:00,31:28:00
+1,31:37:00,1897,2,MOAMEN Afor 96 ELTAYAR M Empty goal,11,EGY,Empty goal,,,,,,"","",,,"","",,,,,,TRUE,EGY,-1,1,6,CHI,55,31:08:00,31:28:00
+1,32:05:00,1925,2,OMAR Y Shot right 9m saved middle left,5,EGY,Empty goal,,,,5,,middle left,right 9m,,1,middle,left,,,,,,TRUE,EGY,-1,1,6,EGY,56,31:28:00,32:05:00
+1,32:06:00,1926,2,ELTAYAR Mfor 11 MOAMEN A Goalkeeper back,96,EGY,96,,,,,,"","",,,"","",,,,,,TRUE,EGY,-1,0,5,EGY,56,31:28:00,32:05:00
+1,32:22:00,1942,2,CEBALLOS S Technical Fault,2,CHI,12,,,,,,"","",,,"","",,,,,,FALSE,CHI,0,0,6,CHI,57,32:05:00,32:22:00
+1,32:32:00,1952,2,MOAMEN Afor 96 ELTAYAR M Empty goal,11,EGY,Empty goal,,,,,,"","",,,"","",,,,,,TRUE,EGY,-1,1,6,CHI,57,32:05:00,32:22:00
+1,32:54:00,1974,2,ZEIN A Goal breakthrough bottom right,90,EGY,Empty goal,,90,,,1,bottom right,breakthrough,,,bottom,right,,,,,,TRUE,EGY,0,1,7,EGY,58,32:22:00,32:54:00
+1,33:06:00,1986,2,ELTAYAR Mfor 89 MAMDOUH M Goalkeeper back,96,EGY,96,,,,,,"","",,,"","",,,,,,TRUE,EGY,0,0,6,EGY,58,32:22:00,32:54:00
+1,33:10:00,1990,2,FEUCHTMANN E Goal breakthrough middle left,10,CHI,12,,10,,,1,middle left,breakthrough,,,middle,left,,,,,,FALSE,CHI,0,0,6,CHI,59,32:54:00,33:10:00
+1,33:42:00,2022,2,OMAR Y Goal right 9m top right,5,EGY,96,,5,,,1,top right,right 9m,,,top,right,,,,,,TRUE,EGY,0,0,6,EGY,60,33:10:00,33:42:00
+1,33:44:00,2024,2,FRELIJJ J Disqualification (red card-three times 2-minute suspensions),9,CHI,12,,,,,,"","",,,"","",,,,,,FALSE,CHI,0,0,6,EGY,60,33:10:00,33:42:00
+1,34:10:00,2050,2,FEUCHTMANN E Goal centre 9m bottom left,4,CHI,12,,4,,,1,bottom left,centre 9m,,,bottom,left,,,,,,FALSE,CHI,0,0,6,CHI,61,33:42:00,34:10:00
+1,34:22:00,2062,2,OMAR Y Goal breakthrough bottom centre,5,EGY,96,,5,,,1,bottom centre,breakthrough,,,bottom,centre,,,,,,TRUE,EGY,0,0,6,EGY,62,34:10:00,34:22:00
+1,34:53:00,2093,2,AYALA Dfor 12 GARCIA F Empty goal,30,CHI,Empty goal,,,,,,"","",,,"","",,,,,,FALSE,CHI,0,1,7,EGY,62,34:10:00,34:22:00
+1,34:55:00,2095,2,SALINAS E Technical Fault,11,CHI,Empty goal,,,,,,"","",,,"","",,,,,,FALSE,CHI,0,1,7,CHI,63,34:22:00,34:55:00
+1,35:00:00,2100,2,GARCIA Ffor 10 FEUCHTMANN E Goalkeeper back,12,CHI,12,,,,,,"","",,,"","",,,,,,FALSE,CHI,0,0,6,CHI,63,34:22:00,34:55:00
+1,35:27:00,2127,2,YOUSRI A Goal right wing top left (39 ELDERAA Y),53,EGY,96,39,53,39,,1,top left,right wing,,,top,left,,,,,,TRUE,EGY,0,0,6,EGY,64,34:55:00,35:27:00
+1,36:03:00,2163,2,SALINAS R Shot right 9m saved middle left,17,CHI,12,,,,17,,middle left,right 9m,,1,middle,left,,,,,,FALSE,CHI,0,0,6,CHI,65,35:27:00,36:20:00
+1,36:20:00,2180,2,ZEIN A Steal,90,EGY,96,,,,,,"","",,,"","",,,,90,,TRUE,EGY,0,0,6,CHI,65,35:27:00,36:20:00
+1,36:20:00,2180,2,SALINAS R Turnover,17,CHI,12,,,,,,"","",,,"","",,,17,,,FALSE,CHI,0,0,6,CHI,65,35:27:00,36:20:00
+1,37:03:00,2223,2,ZEIN A Shot centre 9m saved bottom right,90,EGY,96,,,,90,,bottom right,centre 9m,,1,bottom,right,,,,,,TRUE,EGY,0,0,6,EGY,66,36:20:00,37:03:00
+1,37:17:00,2237,2,MAMDOUH M 7m caused,89,EGY,96,,,,,,"","",,,"","",89,,,,,TRUE,EGY,0,0,6,CHI,67,37:03:00,37:26:00
+1,37:17:00,2237,2,ONETO M 7m received,29,CHI,12,,,,,,"","",,,"","",,29,,,,FALSE,CHI,0,0,6,CHI,67,37:03:00,37:26:00
+1,37:26:00,2246,2,FEUCHTMANN E Goal Penalty shot bottom centre (29 ONETO M),4,CHI,12,29,4,29,,1,bottom centre,Penalty,,,bottom,centre,,,,,,FALSE,CHI,0,0,6,CHI,67,37:03:00,37:26:00
+1,38:12:00,2292,2,OMAR Y Shot breakthrough saved bottom left,5,EGY,96,,,,5,,bottom left,breakthrough,,1,bottom,left,,,,,,TRUE,EGY,0,0,6,EGY,68,37:26:00,38:26:00
+1,38:26:00,2306,2,MAMDOUH M Technical Fault,89,EGY,96,,,,,,"","",,,"","",,,,,,TRUE,EGY,0,0,6,EGY,68,37:26:00,38:26:00
+1,38:33:00,2313,2,FEUCHTMANN E Goal fast break bottom right,4,CHI,12,,4,,,1,bottom right,fast break,,,bottom,right,,,,,,FALSE,CHI,0,0,6,CHI,69,38:26:00,38:33:00
+1,39:07:00,2347,2,MAMDOUH M Goal right 6m bottom right (90 ZEIN A),89,EGY,96,90,89,90,,1,bottom right,right 6m,,,bottom,right,,,,,,TRUE,EGY,0,0,6,EGY,70,38:33:00,39:07:00
+1,39:21:00,2361,2,YOUSRI A 2-minutes suspension,53,EGY,96,,,,,,"","",,,"","",,,,,53,TRUE,EGY,0,0,6,EGY,70,38:33:00,39:07:00
+1,39:41:00,2381,2,FEUCHTMANN H Shot left wing saved bottom centre,21,CHI,12,,,,21,,bottom centre,left wing,,1,bottom,centre,,,,,,FALSE,CHI,0,0,6,CHI,71,39:07:00,39:41:00
+1,39:58:00,2398,2,MOAMEN Afor 96 ELTAYAR M Empty goal,11,EGY,Empty goal,,,,,,"","",,,"","",,,,,,TRUE,EGY,-1,1,6,CHI,71,39:07:00,39:41:00
+1,40:18:00,2418,2,ELTAYAR Mfor 11 MOAMEN A Goalkeeper back,96,EGY,96,,,,,,"","",,,"","",,,,,,TRUE,EGY,-1,0,5,CHI,71,39:07:00,39:41:00
+1,40:19:00,2419,2,SANAD M Goal right wing top left (5 OMAR Y),91,EGY,96,5,91,5,,1,top left,right wing,,,top,left,,,,,,TRUE,EGY,-1,0,5,EGY,72,39:41:00,40:19:00
+1,40:32:00,2432,2,FEUCHTMANN H Shot left wing saved bottom centre,21,CHI,12,,,,21,,bottom centre,left wing,,1,bottom,centre,,,,,,FALSE,CHI,0,0,6,CHI,73,40:19:00,40:46:00
+1,40:34:00,2434,2,OMAR Y 2-minutes suspension,5,EGY,96,,,,,,"","",,,"","",,,,,5,TRUE,EGY,-1,0,5,CHI,73,40:19:00,40:46:00
+1,40:36:00,2436,2,Team timeout,"",CHI,12,,,,,,"","",,,"","",,,,,,FALSE,CHI,0,0,6,CHI,73,40:19:00,40:46:00
+1,40:46:00,2446,2,FEUCHTMANN E Goal breakthrough bottom centre,4,CHI,12,,4,,,1,bottom centre,breakthrough,,,bottom,centre,,,,,,FALSE,CHI,0,0,6,CHI,73,40:19:00,40:46:00
+1,40:55:00,2455,2,MAMDOUH Mfor 96 ELTAYAR M Empty goal,89,EGY,Empty goal,,,,,,"","",,,"","",,,,,,TRUE,EGY,-2,1,5,CHI,73,40:19:00,40:46:00
+1,41:18:00,2478,2,MAMDOUH M Goal right 6m bottom right (91 SANAD M),89,EGY,Empty goal,91,89,91,,1,bottom right,right 6m,,,bottom,right,,,,,,TRUE,EGY,-2,1,5,EGY,74,40:46:00,41:18:00
+1,41:36:00,2496,2,FEUCHTMANN E Goal breakthrough top left,10,CHI,12,,10,,,1,top left,breakthrough,,,top,left,,,,,,FALSE,CHI,0,0,6,CHI,75,41:18:00,41:36:00
+1,42:14:00,2534,2,ELTAYAR Mfor 15 HESHAM A Goalkeeper back,96,EGY,96,,,,,,"","",,,"","",,,,,,TRUE,EGY,-1,0,5,CHI,75,41:18:00,41:36:00
+1,42:19:00,2539,2,RAMADAN M 7m received,55,EGY,96,,,,,,"","",,,"","",,55,,,,TRUE,EGY,-1,0,5,EGY,76,41:36:00,42:25:00
+1,42:19:00,2539,2,FEUCHTMANN H 7m caused,21,CHI,12,,,,,,"","",,,"","",21,,,,,FALSE,CHI,0,0,6,EGY,76,41:36:00,42:25:00
+1,42:25:00,2545,2,YOUSRI A Goal Penalty shot bottom centre (55 RAMADAN M),53,EGY,96,55,53,55,,1,bottom centre,Penalty,,,bottom,centre,,,,,,TRUE,EGY,-1,0,5,EGY,76,41:36:00,42:25:00
+1,42:38:00,2558,2,AYALA D Shot right wing saved middle right,30,CHI,12,,,,30,,middle right,right wing,,1,middle,right,,,,,,FALSE,CHI,0,0,6,CHI,77,42:25:00,43:30:00
+1,43:30:00,2610,2,AYALA D Shot right wing saved top centre,30,CHI,12,,,,30,,top centre,right wing,,1,top,centre,,,,,,FALSE,CHI,0,0,6,CHI,77,42:25:00,43:30:00
+1,43:40:00,2620,2,RAMADAN M Technical Fault,55,EGY,96,,,,,,"","",,,"","",,,,,,TRUE,EGY,0,0,6,EGY,78,43:30:00,43:40:00
+1,44:35:00,2675,2,ZEIN A Block,90,EGY,96,,,,,,"","",,,"","",,,,,,TRUE,EGY,0,0,6,CHI,79,43:40:00,44:35:00
+1,44:35:00,2675,2,FEUCHTMANN E Shot centre 9m blocked,4,CHI,12,,,,4,,blocked,centre 9m,,,"","",,,,,,FALSE,CHI,0,0,6,CHI,79,43:40:00,44:35:00
+1,44:44:00,2684,2,MOAMEN A Shot centre 6m saved bottom left,11,EGY,96,,,,11,,bottom left,centre 6m,,1,bottom,left,,,,,,TRUE,EGY,0,0,6,EGY,80,44:35:00,45:11:00
+1,45:11:00,2711,2,KADDAH H Shot centre 9m saved bottom right,42,EGY,96,,,,42,,bottom right,centre 9m,,1,bottom,right,,,,,,TRUE,EGY,0,0,6,EGY,80,44:35:00,45:11:00
+1,45:23:00,2723,2,SALINAS E Goal fast break bottom left (17 SALINAS R),11,CHI,12,17,11,17,,1,bottom left,fast break,,,bottom,left,,,,,,FALSE,CHI,0,0,6,CHI,81,45:11:00,45:23:00
+1,45:52:00,2752,2,HESHAM A Technical Fault,15,EGY,96,,,,,,"","",,,"","",,,,,,TRUE,EGY,0,0,6,EGY,82,45:23:00,45:52:00
+1,45:52:00,2752,2,FEUCHTMANN E 2-minutes suspension,4,CHI,12,,,,,,"","",,,"","",,,,,4,FALSE,CHI,0,0,6,EGY,82,45:23:00,45:52:00
+1,46:04:00,2764,2,REYES Dfor 12 GARCIA F Empty goal,7,CHI,Empty goal,,,,,,"","",,,"","",,,,,,FALSE,CHI,-1,1,6,EGY,82,45:23:00,45:52:00
+1,46:17:00,2777,2,RAMADAN M 2-minutes suspension,55,EGY,96,,,,,,"","",,,"","",,,,,55,TRUE,EGY,0,0,6,EGY,82,45:23:00,45:52:00
+1,46:35:00,2795,2,SALINAS E Goal centre 6m top centre (10 FEUCHTMANN E),11,CHI,Empty goal,10,11,10,,1,top centre,centre 6m,,,top,centre,,,,,,FALSE,CHI,-1,1,6,CHI,83,45:52:00,46:35:00
+1,46:50:00,2810,2,GARCIA Ffor 10 FEUCHTMANN E Goalkeeper back,12,CHI,12,,,,,,"","",,,"","",,,,,,FALSE,CHI,-1,0,5,CHI,83,45:52:00,46:35:00
+1,46:59:00,2819,2,OMAR Yfor 96 ELTAYAR M Empty goal,5,EGY,Empty goal,,,,,,"","",,,"","",,,,,,TRUE,EGY,-1,1,6,CHI,83,45:52:00,46:35:00
+1,47:22:00,2842,2,ELTAYAR Mfor 11 MOAMEN A Goalkeeper back,96,EGY,96,,,,,,"","",,,"","",,,,,,TRUE,EGY,-1,0,5,CHI,83,45:52:00,46:35:00
+1,47:22:00,2842,2,OMAR Y Technical Fault,5,EGY,96,,,,,,"","",,,"","",,,,,,TRUE,EGY,-1,0,5,EGY,84,46:35:00,47:22:00
+1,47:42:00,2862,2,FEUCHTMANN E Technical Fault,10,CHI,12,,,,,,"","",,,"","",,,,,,FALSE,CHI,-1,0,5,CHI,85,47:22:00,47:42:00
+1,47:43:00,2863,2,PAVEZ Sfor 12 GARCIA F Empty goal,20,CHI,Empty goal,,,,,,"","",,,"","",,,,,,FALSE,CHI,-1,1,6,CHI,85,47:22:00,47:42:00
+1,48:06:00,2886,2,YOUSRI A Goal fast break bottom right (90 ZEIN A),53,EGY,96,90,53,90,,1,bottom right,fast break,,,bottom,right,,,,,,TRUE,EGY,-1,0,5,EGY,86,47:42:00,48:06:00
+1,48:15:00,2895,2,REYES D Goal centre 6m top right,7,CHI,Empty goal,,7,,,1,top right,centre 6m,,,top,right,,,,,,FALSE,CHI,0,1,7,CHI,87,48:06:00,48:15:00
+1,48:49:00,2929,2,ELDERAA S Turnover,45,EGY,96,,,,,,"","",,,"","",,,45,,,TRUE,EGY,0,0,6,EGY,88,48:15:00,48:53:00
+1,48:49:00,2929,2,SALINAS R Steal,17,CHI,Empty goal,,,,,,"","",,,"","",,,,17,,FALSE,CHI,0,1,7,EGY,88,48:15:00,48:53:00
+1,48:53:00,2933,2,Team timeout,"",EGY,96,,,,,,"","",,,"","",,,,,,TRUE,EGY,0,0,6,EGY,88,48:15:00,48:53:00
+1,48:53:00,2933,2,FEUCHTMANN E Goal fast break middle right,4,CHI,Empty goal,,4,,,1,middle right,fast break,,,middle,right,,,,,,FALSE,CHI,0,1,7,CHI,89,48:53:00,48:53:00
+1,48:53:00,2933,2,GARCIA Ffor 10 FEUCHTMANN E Goalkeeper back,12,CHI,12,,,,,,"","",,,"","",,,,,,FALSE,CHI,0,0,6,CHI,89,48:53:00,48:53:00
+1,49:11:00,2951,2,OMAR Y Turnover,5,EGY,96,,,,,,"","",,,"","",,,5,,,TRUE,EGY,0,0,6,EGY,90,48:53:00,49:11:00
+1,49:11:00,2951,2,FEUCHTMANN E Steal,4,CHI,12,,,,,,"","",,,"","",,,,4,,FALSE,CHI,0,0,6,EGY,90,48:53:00,49:11:00
+1,49:16:00,2956,2,SALINAS R Goal fast break top right (4 FEUCHTMANN E),17,CHI,12,4,17,4,,1,top right,fast break,,,top,right,,,,,,FALSE,CHI,0,0,6,CHI,91,49:11:00,49:16:00
+1,49:30:00,2970,2,HESHAM A Technical Fault,15,EGY,96,,,,,,"","",,,"","",,,,,,TRUE,EGY,0,0,6,EGY,92,49:16:00,49:30:00
+1,49:59:00,2999,2,ELDERAA S Steal,45,EGY,96,,,,,,"","",,,"","",,,,45,,TRUE,EGY,0,0,6,CHI,93,49:30:00,49:59:00
+1,49:59:00,2999,2,SALINAS R Turnover,17,CHI,12,,,,,,"","",,,"","",,,17,,,FALSE,CHI,0,0,6,CHI,93,49:30:00,49:59:00
+1,50:36:00,3036,2,YOUSRI A Goal centre 9m top right (39 ELDERAA Y),53,EGY,96,39,53,39,,1,top right,centre 9m,,,top,right,,,,,,TRUE,EGY,0,0,6,EGY,94,49:59:00,50:36:00
+1,51:22:00,3082,2,SALINAS R Goal right 9m bottom left,17,CHI,12,,17,,,1,bottom left,right 9m,,,bottom,left,,,,,,FALSE,CHI,0,0,6,CHI,95,50:36:00,51:22:00
+1,51:34:00,3094,2,ELDERAA Y Goal breakthrough bottom right,39,EGY,96,,39,,,1,bottom right,breakthrough,,,bottom,right,,,,,,TRUE,EGY,0,0,6,EGY,96,51:22:00,51:34:00
+1,52:07:00,3127,2,SALINAS E Goal centre 6m bottom left (4 FEUCHTMANN E),11,CHI,12,4,11,4,,1,bottom left,centre 6m,,,bottom,left,,,,,,FALSE,CHI,0,0,6,CHI,97,51:34:00,52:07:00
+1,52:44:00,3164,2,DONOSO V 2-minutes suspension,77,CHI,12,,,,,,"","",,,"","",,,,,77,FALSE,CHI,0,0,6,CHI,97,51:34:00,52:07:00
+1,53:04:00,3184,2,MOAMEN A Goal left wing bottom left (39 ELDERAA Y),11,EGY,96,39,11,39,,1,bottom left,left wing,,,bottom,left,,,,,,TRUE,EGY,0,0,6,EGY,98,52:07:00,53:04:00
+1,53:15:00,3195,2,FEUCHTMANN Efor 12 GARCIA F Empty goal,10,CHI,Empty goal,,,,,,"","",,,"","",,,,,,FALSE,CHI,-1,1,6,EGY,98,52:07:00,53:04:00
+1,53:51:00,3231,2,SALINAS E Goal centre 6m bottom left (17 SALINAS R),11,CHI,Empty goal,17,11,17,,1,bottom left,centre 6m,,,bottom,left,,,,,,FALSE,CHI,-1,1,6,CHI,99,53:04:00,53:51:00
+1,54:14:00,3254,2,GARCIA Ffor 10 FEUCHTMANN E Goalkeeper back,12,CHI,12,,,,,,"","",,,"","",,,,,,FALSE,CHI,-1,0,5,CHI,99,53:04:00,53:51:00
+1,54:48:00,3288,2,YOUSRI A Goal fast break top left,53,EGY,96,,53,,,1,top left,fast break,,,top,left,,,,,,TRUE,EGY,0,0,6,EGY,100,53:51:00,55:46:00
+1,55:07:00,3307,2,FEUCHTMANN E Shot centre 9m saved bottom left,4,CHI,12,,,,4,,bottom left,centre 9m,,,bottom,left,,,,,,FALSE,CHI,0,0,6,CHI,101,55:46:00,55:07:00
+1,55:08:00,3308,2,GONZALEZ Vfor 12 GARCIA F Goalkeeper Substitution,16,CHI,12,,,,,,"","",,,"","",,,,,,FALSE,CHI,0,0,6,EGY,102,55:07:00,55:46:00
+1,55:46:00,3346,2,KADDAH H Shot left 9m post,42,EGY,96,,,,42,,post,left 9m,1,,"","",,,,,,TRUE,EGY,0,0,6,EGY,102,55:07:00,55:46:00
+1,55:54:00,3354,2,FEUCHTMANN E Goal fast break bottom right,4,CHI,12,,4,,,1,bottom right,fast break,,,bottom,right,,,,,,FALSE,CHI,0,0,6,CHI,103,55:46:00,55:54:00
+1,56:38:00,3398,2,KADDAH H Goal breakthrough bottom right,42,EGY,96,,42,,,1,bottom right,breakthrough,,,bottom,right,,,,,,TRUE,EGY,0,0,6,EGY,104,55:54:00,56:38:00
+1,56:53:00,3413,2,Team timeout,"",CHI,12,,,,,,"","",,,"","",,,,,,FALSE,CHI,0,0,6,CHI,105,56:38:00,57:09:00
+1,57:09:00,3429,2,YOUSRI A Steal,53,EGY,96,,,,,,"","",,,"","",,,,53,,TRUE,EGY,0,0,6,CHI,105,56:38:00,57:09:00
+1,57:09:00,3429,2,SALINAS R Turnover,17,CHI,12,,,,,,"","",,,"","",,,17,,,FALSE,CHI,0,0,6,CHI,105,56:38:00,57:09:00
+1,57:37:00,3457,2,RAMADAN M Turnover,55,EGY,96,,,,,,"","",,,"","",,,55,,,TRUE,EGY,0,0,6,EGY,106,57:09:00,57:37:00
+1,58:01:00,3481,2,SALINAS R Goal breakthrough bottom left,17,CHI,12,,17,,,1,bottom left,breakthrough,,,bottom,left,,,,,,FALSE,CHI,0,0,6,CHI,107,57:37:00,58:01:00
+1,58:38:00,3518,2,RAMADAN M Goal breakthrough bottom left,55,EGY,96,,55,,,1,bottom left,breakthrough,,,bottom,left,,,,,,TRUE,EGY,0,0,6,EGY,108,58:01:00,58:38:00
+1,59:00:00,3540,2,CEBALLOS S Goal left wing bottom centre (11 SALINAS E),2,CHI,12,11,2,11,,1,bottom centre,left wing,,,bottom,centre,,,,,,FALSE,CHI,0,0,6,CHI,109,58:38:00,59:00:00
+1,59:31:00,3571,2,MOAMEN A Shot left wing saved bottom centre,11,EGY,96,,,,11,,bottom centre,left wing,,1,bottom,centre,,,,,,TRUE,EGY,0,0,6,EGY,110,59:00:00,59:31:00
+1,59:44:00,3584,2,CEBALLOS S Shot fast break saved top centre,2,CHI,12,,,,2,,top centre,fast break,,1,top,centre,,,,,,FALSE,CHI,0,0,6,CHI,111,59:31:00,59:44:00
+1,59:51:00,3591,2,ELDERAA S Goal breakthrough top left,45,EGY,96,,45,,,1,top left,breakthrough,,,top,left,,,,,,TRUE,EGY,0,0,6,EGY,112,59:44:00,60:00:00
