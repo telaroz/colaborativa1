@@ -38,8 +38,10 @@ Se descargan todos los archivos pdf de la página del partido con la función `s
 
 
 ```{r eval = FALSE}
+en <- 'https://www.ihf.info/competitions/men/308/27th-ihf-men039s-world-championship-2021/22415/match-center/22525'
+
 egipto21::scrape_from_ihf(
-  enlace = 'https://www.ihf.info/competitions/men/308/27th-ihf-men039s-world-championship-2021/22415/match-center/22525',
+  enlace = en,
   carpeta = 'scraping')
 ```
 
@@ -353,7 +355,8 @@ tables <- tabulizer::extract_tables('scraping/01FTR.PDF', method = 'stream')
 
 equipos <- purrr::keep(tables, ~ ncol(.x) == 17) %>%
   purrr::map(data.table::as.data.table) %>% 
-  purrr::map(~.x[stringr::str_detect(V1, '\\d+'),.(numero = V1, jugador = V2, Tiempo_jugado = V17)])
+  purrr::map(~.x[stringr::str_detect(V1, '\\d+'),
+                 .(numero = V1, jugador = V2, Tiempo_jugado = V17)])
 
 equipos[[1]][, Equipo := 'EGY']
 equipos[[2]][, Equipo := 'CHI']
