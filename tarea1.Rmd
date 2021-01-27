@@ -22,7 +22,7 @@ knitr::include_graphics("NoA1.PNG")
 knitr::include_graphics("NoA2.PNG")
 ```
 
-Vemos sin embargo, que estos números están incorrectos pues la máxima diferencia de posesiones en un partido es de 1. 
+Se observa sin embargo, que estos números están incorrectos pues la máxima diferencia de posesiones en un partido es de 1. 
 
 ## Pregunta B: 
 
@@ -30,22 +30,23 @@ Vemos sin embargo, que estos números están incorrectos pues la máxima diferen
  
  
 
-Ya que no puede haber diferencia en posesiones de ambos equipos en más de una, el dato en el archivo FRT está incorrecto. 
+Ya que no puede haber diferencia en posesiones de ambos equipos en más de una, el dato en el archivo FRT es incorrecto. 
 
-En el listado de "jugada a jugada" sí podemos calcular el número de posesiones. 
+En el listado de "jugada a jugada" sí se puede calcular el número de posesiones. 
 
-Se descargaron todos los archivos pdf de la página del partido con la función `scrape_from_ihf` creada en R. Se pueden ver los detalles de esta función [acá](https://github.com/telaroz/egipto21/blob/main/R/utilidades.R).
+Se descargan todos los archivos pdf de la página del partido con la función `scrape_from_ihf` creada en R. Se pueden ver los detalles de esta función [acá](https://github.com/telaroz/egipto21/blob/main/R/utilidades.R).
 
 
 ```{r eval = FALSE}
-egipto21::scrape_from_ihf(enlace = 'https://www.ihf.info/competitions/men/308/27th-ihf-men039s-world-championship-2021/22415/match-center/22525',
-                          carpeta = 'scraping')
+egipto21::scrape_from_ihf(
+  enlace = 'https://www.ihf.info/competitions/men/308/27th-ihf-men039s-world-championship-2021/22415/match-center/22525',
+  carpeta = 'scraping')
 ```
 
 
 Para contar el número de posesiones, he generado una función `generar_pbp_tidy` de la que se pueden ver detalles [acá](https://github.com/telaroz/egipto21/blob/main/R/funciones_pbp.R): que toma el archivo en pdf que hemos descargado y convierte la tabla de jugadas a un formato 'tidy'. De esta forma, podremos trabajar nuestros datos de manera más sencilla.
 
-Al revisar más a fondo este partido, nos damos cuenta de un error importante (hay otros menores) en el pdf, donde hizo falta una posesión chilena, en este caso la posesión número 100. Esta fue corregida manualmente, actualizando así el archivo .csv de este partido. 
+Al revisar más a fondo este partido, se observa un error importante (hay otros menores) en el pdf, donde hizo falta una posesión chilena, en este caso la posesión número 101. Esta fue corregida manualmente, actualizando así el archivo .csv de este partido. El error fue encontrado, pues entre un gol de Egipto, sigue inmediatamente un tiro de Egipto, sin que haya respuesta (por pérdida, tiro, o falta técnica) de Chile. 
 
 
 Veamos la cantidad de posesiones totales y la cantidad de posesiones por equipo
@@ -68,7 +69,7 @@ kableExtra::kable(tabla) %>%
 ```
 
 
-Analicemos más de cerca aquellas posesiones donde hay más de un tiro:
+Se analizan más de cerca aquellas posesiones donde hay más de un tiro. Estas posesiones fueron contrastadas con el video para observar que estuvieran correctamente marcadas.
 
 ```{r}
 posesiones_multi_lanzamiento <- 
@@ -89,16 +90,37 @@ mas_de_un_tiro <- data[numero_posesion %in% posesiones_multi_lanzamiento,
   kableExtra::kable_styling(full_width = FALSE)
 ```
 
-Es interesante ver que solamente en la posesiones 77 y 80, se desaprovecharon las segundas oportunidades que se tuvieron para anotar.
+En las posesiones 77 y 80, se hizo un tiro adicional, pero no se anotó. 
+
+
+se verifican las posesiones donde se perdió balón o se hizo falta técnica, para observar si en esa misma posesión también se hizo algun tiro antes. 
+
+```{r}
+posesiones_con_perdida_y_tiro <- 
+  data[numero_posesion %in% 
+         data[stringr::str_detect(accion, 'Technical') | 
+                !is.na(turnover)]$numero_posesion & posicion_marco != '', 
+       .(tiempo, accion, posesion, numero_posesion)]
+```
+
+```{r, echo = FALSE}
+  kableExtra::kable(posesiones_con_perdida_y_tiro) %>%
+  kableExtra::kable_styling(full_width = FALSE)
+
+```
+
+
+Se observa que cada equipo hizo un lanzamiento y luego perdió el balón sin lograr anotar.
+
 
 ## Pregunta C:
 
 #### ¿Qué formatos de estadística están disponibles? (pdf, html, csv…)
 
 
-En este caso podemos ver estadísticas generales del partido, en formato xlm. 
+En este caso se pueden ver estadísticas generales del partido, en formato xlm. 
 
-Además, observamos 4 archivos en pdf: 
+Además, existen 4 archivos en pdf: 
 
 - FTR: Tiene las estadísticas de cada jugador, su tiempo de juego, posiciones de lanzamientos y salvadas del portero. Además tiene un resumen de los lanzamientos por equipo. 
 
@@ -133,7 +155,8 @@ resumen <- data[, .(Posesiones = data.table::uniqueN(numero_posesion),
 efectividad <- data.table::copy(resumen)
 
 efectividad <- 
-  efectividad[, `Efectividad Tiros por Posesion` := scales::percent(`Posesiones con lanzamiento`/`Posesiones`)
+  efectividad[, `Efectividad Tiros por Posesion` := 
+                scales::percent(`Posesiones con lanzamiento`/`Posesiones`)
   ][, `Efectividad Goles por Posesion` := scales::percent(`Goles`/`Posesiones`)
   ][, `Efectividad Lanzamientos` := scales::percent(Goles/`Posesiones con lanzamiento`)
   ][,.(Equipo,  `Efectividad Tiros por Posesion`,
@@ -157,45 +180,27 @@ resumen[, diferencia := CHI - EGY]
 ```
 
 
-Podemos ver que Chile hizo lanzamientos en 7 posesiones menos que Egipto. Podríamos pensar que se debe a la diferencia de pérdidas de balón únicamente, pero analicemos esto más a detalle.
+Se puede ver que Chile hizo lanzamientos en 7 posesiones menos que Egipto. Podríamos pensar que se debe a la diferencia de pérdidas de balón únicamente, pero analicemos esto más a detalle.
 
 
-Verifiquemos las posesiones donde se perdió balón o se hizo falta técnica, para observar si en esa misma posesión también se hizo algun tiro antes. 
-
-```{r}
-posesiones_con_perdida_y_tiro <- 
-  data[numero_posesion %in% 
-         data[stringr::str_detect(accion, 'Technical') | 
-                !is.na(turnover)]$numero_posesion & posicion_marco != '', 
-       .(tiempo, accion, posesion, numero_posesion)]
-```
-
-```{r, echo = FALSE}
-  kableExtra::kable(posesiones_con_perdida_y_tiro) %>%
-  kableExtra::kable_styling(full_width = FALSE)
-
-```
-
-Podemos observar que cada equipo hizo un lanzamiento y luego perdió el balón sin lograr anotar.
-
-
-Es decir, de haber dejado de perder el balón (o hecho falta técnica) 6 veces durante el partido y convertido eso en lanzamientos, Chile pudo haber estado más cerca del marcador. 
+Es decir, de haber dejado de perder el balón (o hecho falta técnica) 7 veces durante el partido y convertido eso en lanzamientos, Chile pudo haber estado más cerca del marcador.
 
 Si bien las pérdidas de balón tuvieron gran importancia, es apresurado concluir que la diferencia de 6 goles se debe únicamente a eso. Supongamos una probabilidad de conversión de lanzamiento uniforme durante el partido, es decir, para Chile un 74.4%: de esta forma en 6 tiros adicionales esperaríamos 4.5 goles adicionales. 
 
 
 $~$
 
-Calculemos ahora los goles esperados, lo que nos dará una idea de la calidad de lanzamientos que tuvo cada equipo. Para esto, podríamos tomar un marco de referencia externo con muchos más tiros, por ejemplo un análisis de 75,000 tiros de la Bundesliga. Estos goles esperados están mucho más detallados de aquellos que podemos tomar de los play by play de este mundial. En [este](https://handballytics.de/expected-goals-wurfeffizenz/) enlace se puede ver la tabla con goles esperados por tipo de tiro. 
+Se calculan ahora los goles esperados, lo que dará una idea de la calidad de lanzamientos que tuvo cada equipo. Para esto, una posibilidad es tomar un marco de referencia externo al mundial, con muchos más tiros. Por ejemplo un análisis de 75,000 tiros de la Bundesliga. Estos goles esperados están mucho más detallados y segregados que aquellos que podemos tomar de los play by play de este mundial. En [este](https://handballytics.de/expected-goals-wurfeffizenz/) enlace se puede ver la tabla con goles esperados por tipo de tiro. 
 
-Tomemos todos los partidos de la fase de grupos como nuestra referencia. Si bien no es una gran cantidad de datos, es suficiente para el análisis y la creación de este modelo discreto (que con más datos, por ejemplo espaciales del punto exacto del lanzamiento o velocidad del jugador, se podría trabajar con un modelo más continuo, comparando con los que encontramos actualmente para balonmano).
+Para este ejercicio, se toman todos los partidos de la fase de grupos como referencia. Si bien no es una gran cantidad de datos, es suficiente para el análisis y la creación de este modelo discreto (que con más datos, por ejemplo espaciales del punto exacto del lanzamiento o velocidad del jugador, se podría trabajar con un modelo más continuo, comparando con los que encontramos actualmente para balonmano).
 
 
-Cargamos todos los partidos de la fase de grupos para analizar los tiros. Este archivo fue generado con todos los play by play de la fase de grupos gracias a la función `generar_pbp_tidy` mencionada anteriormente. Acá simplemente descargamos ese archivo y tomamos a los equipos que nos interesan.  
+Se cargan todos los partidos de la fase de grupos para analizar los tiros. Este archivo fue generado con todos los play by play de la fase de grupos gracias a la función `generar_pbp_tidy` mencionada anteriormente. Acá simplemente descargamos ese archivo y tomamos a los equipos que nos interesan.  
 
 ```{r}
 partidos <- 
-  data.table::fread('https://raw.githubusercontent.com/telaroz/egipto21/main/partidos_fase1.csv')
+  data.table::fread(
+    'https://raw.githubusercontent.com/telaroz/egipto21/main/partidos_fase1.csv')
 
 equipos_analisis <- partidos[id_partido %in% c(1, 17, 18, 33, 34)]
 
@@ -213,7 +218,7 @@ equipos_analisis <- split(equipos_analisis, equipos_analisis$id_partido) %>%
 ```
 
 
-Ahora generamos la tabla de goles esperados por posición de tiro, que simplemente es la división entre la cantidad de goles anotados entre el total de tiros hecho por cada posición. 
+Ahora se genera la tabla de goles esperados por posición de tiro, que simplemente es la división entre la cantidad de goles anotados entre el total de tiros hecho por cada posición. 
 
 ```{r}
 partidos <- partidos[,.(gol, posicion_tiro)]
@@ -232,7 +237,7 @@ esperados <- tiros[, .(xg = sum(gol)/.N, cantidad_tiros = .N), posicion_tiro][or
 
 
 
-Ahora, para cada tiro, agregamos su xg. 
+Ahora, para cada tiro, se agrega su xg. 
 
 ```{r}
 data[esperados, xg := i.xg, on = 'posicion_tiro']
@@ -267,10 +272,10 @@ xg_final <- xg_final[, .(`Goles Esperados` = sum(xg_ajustado)), equipo
 ```
 
 
-Podemos observar que bajo el marco de referencia de un equipo de fase de grupos del mundial, Egipto anotó 5 goles más de lo esperado y Chile poco más de 2 goles adicionales. Comparando 5.15 y 2.43, podríamos señalar que Egipto fue 2 a 3 goles más efectivo en sus tiros que Chile. 
+Se observa que bajo el marco de referencia de un equipo de fase de grupos del mundial, Egipto anotó 5 goles más de lo esperado y Chile poco más de 2 goles adicionales. Comparando 5.15 y 2.43, se podría señalar que Egipto fue 2 a 3 goles más efectivo en sus tiros que Chile. 
 
 
-Analicemos los goles esperados y anotados de los 3 partidos de cada equipo en la fase de grupos:
+Ahora se analizan los goles esperados y anotados de los 3 partidos de cada equipo en la fase de grupos:
 
 ```{r}
 equipos_analisis[esperados, xg := i.xg, on = 'posicion_tiro']
@@ -313,11 +318,11 @@ plotly::ggplotly(plot)
   
 ```
 
-En este gráfico podemos observar que en los 3 partidos, Egipto está por encima de la línea de goles esperados. Sin embargo, Chile solamente está en esta situación justamente el partido con Egipto. Aunque la muestra es pequeña, podemos pensar que Chile fue particularmente efectivo en este partido contra Egipto. (Este gráfico es interactivo si vemos este archivo en formato html, por lo que se puede observar en cada punto de qué partido se trata y su información de goles anotados y esperados).
+En este gráfico se observa que en los 3 partidos, Egipto está por encima de la línea de goles esperados. Sin embargo, Chile solamente está en esta situación justamente el partido con Egipto. Aunque la muestra es pequeña, se puede pensar que Chile fue particularmente efectivo en este partido contra Egipto. (Este gráfico es interactivo si se lee este archivo en formato html, por lo que se puede observar en cada punto de qué partido se trata y su información de goles anotados y esperados).
 
 
 
-Analicemos la efectividad de Chile por posición (en general tiros, no posesiones):
+Se analiza ahora la efectividad de Chile por posición (en general tiros, no posesiones):
 
 ```{r}
 
@@ -339,7 +344,7 @@ esperados_chile <- tiros[, .(xg = sum(gol)/.N, cantidad_tiros = .N), posicion_ti
 
 Sin duda un partido no es una muestra suficiente, pero en este partido los lanzamientos por el centro de 9m fueron altamente utilizados y poco efectivos. Sin embargo, algunos tiros de estos fueron condicionados por la amenaza del pasivo.
 
-Analicemos también la dependecia de ciertos jugadores en cada equipo. Para esto podemos obtener del archivo ya descargado '01FRT.PDF' la distribución de minutos por jugador durante este partido. Cargamos los datos, extraemos las tablas y limpiamos el tiempo para que nos lo de en minutos enteros. 
+Se puede analizar también la dependecia de ciertos jugadores en cada equipo. Para esto del archivo ya descargado '01FRT.PDF' se puede obtener la distribución de minutos por jugador durante este partido. Se cargan los datos, se extraen las tablas y se limpia el tiempo para obtener minutos enteros jugados. 
 
 ```{r warning = FALSE}
 library(magrittr)
@@ -362,7 +367,7 @@ equipos[, Jugador := paste(numero, '', jugador)]
 equipos_limpio <- equipos[!is.na(`Tiempo jugado`)]
 ```
 
-Ahora, visualicemos cómo se distribuyen los minutos por jugador (reconocimiento completo a la idea de este gráfico a Edu Agulló).
+Ahora, se visualiza cómo se distribuyen los minutos por jugador (reconocimiento completo a la idea de este gráfico a Edu Agulló).
 
 ```{r}
 library(ggplot2)
@@ -388,8 +393,8 @@ ggply
 
 ```
 
-Podemos ver que 5 jugadores chilenos tuvieron una carga mayor a los 40 minutos contra únicamente 3 jugadores de Egipto. Egipto distribuye más hacia el centro los minutos de cada uno de sus jugadores: pocos jugadores jugaron muy poco y pocos jugadores jugaron mucho.
+Se observa que 5 jugadores chilenos tuvieron una carga mayor a los 40 minutos contra únicamente 3 jugadores de Egipto. Egipto distribuye más hacia el centro los minutos de cada uno de sus jugadores: pocos jugadores jugaron muy poco y pocos jugadores jugaron mucho.
 
-Como conclusión podríamos decir que si bien las pérdidas de balón chilenas tuvieron una influencia muy importante en el marcador final, Egipto fue más efectivo en las ocasiones que tuvo, administrando mejor sus jugadores durante el partido. 
+Como conclusión se puede decir que si bien las pérdidas de balón chilenas tuvieron una influencia muy importante en el marcador final, Egipto fue más efectivo en las ocasiones que tuvo, administrando mejor sus jugadores durante el partido. 
 
 
