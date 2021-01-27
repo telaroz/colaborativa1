@@ -38,10 +38,9 @@ Se descargan todos los archivos pdf de la página del partido con la función `s
 
 
 ```{r eval = FALSE}
-en <- 'https://www.ihf.info/competitions/men/308/27th-ihf-men039s-world-championship-2021/22415/match-center/22525'
 
 egipto21::scrape_from_ihf(
-  enlace = en,
+  enlace = 'https://www.ihf.info/competitions/men/308/27th-ihf-men039s-world-championship-2021/22415/match-center/22525',
   carpeta = 'scraping')
 ```
 
